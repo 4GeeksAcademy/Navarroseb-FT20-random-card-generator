@@ -1,1 +1,124 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+    background-color: green;
+    font-family: 'Arbutus Slab', serif;
+    font-size: 12px;
+}
+
+span {
+    width: 200px;
+    color: white;
+    border-top: 2px solid black;
+    font-size: xx-large;
+}
+
+.contenedor {
+    height: 105vh;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carta {
+    font-size: 190px;
+    line-height: 0px;
+}
+
+.carta .numero {
+    width: 500px;
+    height: 700px;
+    background-color: white;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.red {
+    color: red;
+}
+
+.black {
+    color: black;
+}
+
+.carta .hearts::before {
+    color: red;
+    content: '\2665';
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    height: 40%;
+    padding-left: 15px;
+}
+
+.carta .hearts::after {
+    color: red;
+    content: '\2665';
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    height: 40%;
+    transform: rotate(180deg);
+    padding-left: 15px;
+}
+
+.carta .spades::before {
+    content: '\2660';
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    height: 40%;
+    padding-left: 15px;
+}
+
+.carta .spades::after {
+    content: '\2660';
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    transform: rotate(180deg);
+    height: 40%;
+    padding-left: 15px;
+}
+
+.carta .clubs::before {
+    content: '\2663';
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    height: 40%;
+    padding-left: 15px;
+}
+
+.carta .clubs::after {
+    content: '\2663';
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    transform: rotate(180deg);
+    height: 40%;
+    padding-left: 15px;
+}
+
+.carta .diamonds::before {
+    color: red;
+    content: '\2666';
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    height: 40%;
+    padding-left: 15px;
+}
+
+.carta .diamonds::after {
+    color: red;
+    content: '\2666';
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    transform: rotate(180deg);
+    height: 40%;
+    padding-left: 15px;
+}
